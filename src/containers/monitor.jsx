@@ -201,11 +201,11 @@ class Monitor extends React.Component {
                     {...monitorProps}
                     draggable={this.props.draggable}
                     height={this.props.height}
+                    highlightItem={this.props.highlightItem}
                     isDiscrete={this.props.isDiscrete}
                     max={this.props.max}
                     min={this.props.min}
                     mode={this.props.mode}
-                    opcode={this.props.opcode}
                     targetId={this.props.targetId}
                     width={this.props.width}
                     onDragEnd={this.handleDragEnd}
@@ -226,6 +226,7 @@ Monitor.propTypes = {
     addMonitorRect: PropTypes.func.isRequired,
     draggable: PropTypes.bool,
     height: PropTypes.number,
+    highlightItem: PropTypes.number,
     id: PropTypes.string.isRequired,
     intl: intlShape,
     isDiscrete: PropTypes.bool,
